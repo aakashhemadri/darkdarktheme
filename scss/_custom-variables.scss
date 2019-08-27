@@ -25,14 +25,22 @@ $danger: #a54242;
 $light: #c5c8c6;
 $dark: #1d1f21;
 
+$tint-color: $body-color;
 // Adding (!) an additional theme color (ex. classes btn-cool, bg-cool)
 //$theme-colors: (
 //  "cool": #4d3fa3
 //);
 
 //
-$yiq-text-dark: $dark;
-$yiq-text-light: $light;
+
+$link-color: $primary;
+$link-decoration: none;
+$link-hover-color: darken($link-color, 15%) !default;
+$link-hover-decoration: none;
+// Darken percentage for links with `.text-*` class (e.g. `.text-success`)
+$emphasized-link-hover-darken-percentage: 15% !default;
+$yiq-text-dark: $tint-color;
+$yiq-text-light: $tint-color;
 
 $enable-rounded: false;
 $enable-responsive-font-sizes: true;
@@ -40,13 +48,119 @@ $enable-responsive-font-sizes: true;
 // $link-color:
 $border-color: $secondary;
 
-$text-muted: darken($body-color, 15%);
-$blockquote-small-color: darken($body-color, 15%);
-$hr-border-color: rgba($dark, 0.1);
+$component-active-color: $tint-color;
+$component-active-bg: $tint-color;
+// Muted text
+$text-muted: darken($tint-color, 15%);
 
-//Input area color
+$blockquote-small-color: darken($tint-color, 15%);
+
+$hr-border-color: rgba($tint-color, 0.1);
+//<mark>
+// $mark-bg:
+// Table color
+$table-color: $tint-color;
+$table-accent-bg: rgba($tint-color, 0.05);
+$table-hover-color: $table-color;
+$table-hover-bg: rgba($tint-color, 0.075);
+$table-active-bg: $table-hover-bg;
+
+$table-border-color: $border-color;
+$table-head-bg: $body-bg;
+$table-head-color: $body-bg;
+
+$table-dark-color: $tint-color;
+$table-dark-bg: $body-bg !default;
+$table-dark-accent-bg: rgba($tint-color, 0.05);
+$table-dark-hover-color: $table-dark-color;
+$table-dark-hover-bg: rgba($tint-color, 0.075);
+$table-dark-border-color: lighten($table-dark-bg, 7.5%);
+$table-caption-color: $text-muted;
+
+$input-btn-focus-color: rgba($component-active-bg, 0.25);
+
 $input-bg: $secondary;
-//** Text color for `<input>`s
-$input-color: $light;
-//** Placeholder text color
-$input-color-placeholder: $light;
+$input-disabled-bg: darken($input-bg, 15%);
+$input-color: $tint-color;
+$input-border-color: $tint-color;
+
+$input-focus-bg: $input-bg;
+$input-focus-border-color: lighten($component-active-bg, 25%);
+$input-focus-color: $input-color;
+
+$input-placeholder-color: $tint-color;
+$input-plaintext-color: $tint-color;
+
+$input-group-addon-color: $input-color;
+$input-group-addon-bg: $body-bg;
+$input-group-addon-border-color: $input-border-color;
+
+$nav-link-disabled-color: $body-bg;
+
+$nav-tabs-border-color: $body-bg;
+$nav-tabs-link-hover-border-color: $tint-color;
+// $nav-tabs-border-color !default;
+$nav-tabs-link-active-color: darken($tint-color, 15%);
+$nav-tabs-link-active-bg: lighten($body-bg, 15%);
+$nav-tabs-link-active-border-color: darken($tint-color, 15%);
+// $nav-tabs-link-active-bg !default;
+
+$nav-pills-link-active-color: $component-active-color;
+$nav-pills-link-active-bg: $component-active-bg;
+
+$nav-divider-color: $secondary;
+
+// $navbar-dark-color:                 rgba($white, .5) !default;
+// $navbar-dark-hover-color:           rgba($white, .75) !default;
+// $navbar-dark-active-color:          $white !default;
+// $navbar-dark-disabled-color:        rgba($white, .25) !default;
+// $navbar-dark-toggler-icon-bg:       str-replace(url("data:image/svg+xml,%3csvg viewBox='0 0 30 30' xmlns='http://www.w3.org/2000/svg'%3e%3cpath stroke='#{$navbar-dark-color}' stroke-width='2' stroke-linecap='round' stroke-miterlimit='10' d='M4 7h22M4 15h22M4 23h22'/%3e%3c/svg%3e"), "#", "%23") !default;
+// $navbar-dark-toggler-border-color:  rgba($white, .1) !default;
+
+// $navbar-light-color:                rgba($black, .5) !default;
+// $navbar-light-hover-color:          rgba($black, .7) !default;
+// $navbar-light-active-color:         rgba($black, .9) !default;
+// $navbar-light-disabled-color:       rgba($black, .3) !default;
+// $navbar-light-toggler-icon-bg:      str-replace(url("data:image/svg+xml,%3csvg viewBox='0 0 30 30' xmlns='http://www.w3.org/2000/svg'%3e%3cpath stroke='#{$navbar-light-color}' stroke-width='2' stroke-linecap='round' stroke-miterlimit='10' d='M4 7h22M4 15h22M4 23h22'/%3e%3c/svg%3e"), "#", "%23") !default;
+// $navbar-light-toggler-border-color: rgba($black, .1) !default;
+
+// $navbar-light-brand-color:                $navbar-light-active-color !default;
+// $navbar-light-brand-hover-color:          $navbar-light-active-color !default;
+// $navbar-dark-brand-color:                 $navbar-dark-active-color !default;
+// $navbar-dark-brand-hover-color:           $navbar-dark-active-color !default;
+
+// $dropdown-color: $body-color !default;
+// $dropdown-bg: $primary !default;
+// $dropdown-border-color: rgba($black, 0.15) !default;
+
+// $dropdown-divider-bg: $gray-200 !default;
+
+// $dropdown-link-color: $gray-900 !default;
+// $dropdown-link-hover-color: darken($gray-900, 5%) !default;
+// $dropdown-link-hover-bg: $gray-100 !default;
+
+// $dropdown-link-active-color: $component-active-color !default;
+// $dropdown-link-active-bg: $component-active-bg !default;
+
+// $dropdown-link-disabled-color: $gray-600 !default;
+
+// $dropdown-header-color: $gray-600 !default;
+
+// $pagination-color: $link-color;
+// $pagination-bg: $light;
+// $pagination-border-color: $gray-300 !default;
+
+// $pagination-hover-color: $link-hover-color !default;
+// $pagination-hover-bg: $gray-200 !default;
+// $pagination-hover-border-color: $gray-300 !default;
+
+// $pagination-active-color: $component-active-color !default;
+// $pagination-active-bg: $component-active-bg !default;
+// $pagination-active-border-color: $pagination-active-bg !default;
+
+// $pagination-disabled-color: $gray-600 !default;
+// $pagination-disabled-bg: $white !default;
+// $pagination-disabled-border-color: $gray-300 !default;
+
+// $jumbotron-color: null !default;
+// $jumbotron-bg: $gray-200 !default;
