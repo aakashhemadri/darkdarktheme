@@ -21,6 +21,7 @@ $warning: #f0c674;
 $danger: #a54242;
 $light: #fff;
 $dark: #000;
+$hack: $body-color;
 
 // Adding (!) an additional theme color (ex. classes btn-cool, bg-cool)
 $theme-colors: (
@@ -31,7 +32,8 @@ $theme-colors: (
   "warning": $warning,
   "danger": $danger,
   "light": $light,
-  "dark": $dark
+	"dark": $dark,
+	"hack": $hack
 );
 
 // Color system
@@ -78,6 +80,88 @@ $teal: #20c997;
 $cyan: #17a2b8;
 
 $tint-color: $body-color;
+
+// $link-color: $primary;
+// $link-decoration: none;
+// $link-hover-color: darken($link-color, 15%) ;
+// $link-hover-decoration: none;
+// // Darken percentage for links with `.text-*` class (e.g. `.text-success`)
+// $emphasized-link-hover-darken-percentage: 15% ;
+// $yiq-text-dark: $tint-color;
+// $yiq-text-light: $tint-color;
+
+// $enable-rounded: false;
+// $enable-responsive-font-sizes: true;
+
+// // $link-color:
+// $border-color: $secondary;
+
+// $component-active-color: $tint-color;
+// $component-active-bg: $tint-color;
+// // Muted text
+// $text-muted: darken($tint-color, 15%);
+
+// $blockquote-small-color: darken($tint-color, 15%);
+
+// $hr-border-color: rgba($tint-color, 0.1);
+// //<mark>
+// // $mark-bg:
+// // Table color
+// $table-color: $tint-color;
+// $table-accent-bg: rgba($tint-color, 0.05);
+// $table-hover-color: $table-color;
+// $table-hover-bg: rgba($tint-color, 0.075);
+// $table-active-bg: $table-hover-bg;
+
+// $table-border-color: $border-color;
+// $table-head-bg: $body-bg;
+// $table-head-color: $body-bg;
+
+// $table-dark-color: $tint-color;
+// $table-dark-bg: $body-bg ;
+// $table-dark-accent-bg: rgba($tint-color, 0.05);
+// $table-dark-hover-color: $table-dark-color;
+// $table-dark-hover-bg: rgba($tint-color, 0.075);
+// $table-dark-border-color: lighten($table-dark-bg, 7.5%);
+// $table-caption-color: $text-muted;
+
+// $input-btn-focus-color: rgba($component-active-bg, 0.25);
+
+//$input-bg: $secondary;
+// $input-disabled-bg: darken($input-bg, 15%);
+// $input-color: $tint-color;
+// $input-border-color: $tint-color;
+
+// $input-focus-bg: $input-bg;
+// $input-focus-border-color: lighten($component-active-bg, 25%);
+// $input-focus-color: $input-color;
+
+// $input-placeholder-color: $tint-color;
+// $input-plaintext-color: $tint-color;
+
+// $input-group-addon-color: $input-color;
+// $input-group-addon-bg: $body-bg;
+// $input-group-addon-border-color: $input-border-color;
+
+// $nav-link-disabled-color: $body-bg;
+
+// $nav-tabs-border-color: $body-bg;
+// $nav-tabs-link-hover-border-color: $tint-color;
+// // $nav-tabs-border-color ;
+// $nav-tabs-link-active-color: darken($tint-color, 15%);
+// $nav-tabs-link-active-bg: lighten($body-bg, 15%);
+// $nav-tabs-link-active-border-color: darken($tint-color, 15%);
+// // $nav-tabs-link-active-bg ;
+
+// $nav-pills-link-active-color: $component-active-color;
+// $nav-pills-link-active-bg: $component-active-bg;
+
+// $nav-divider-color: $secondary;
+
+// Variables
+//
+// Variables should follow the `$component-state-property-size` formula for
+// consistent naming. Ex: $nav-link-disabled-color and $modal-content-box-shadow-xs.
 
 // Spacing
 //
