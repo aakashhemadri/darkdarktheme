@@ -42,9 +42,9 @@ $white: #151515;
 // #0f9b0f;
 $gray-100: #151515;
 $gray-100: #151515;
-$gray-200: #151515;
+$gray-200: #2F2F2F;
 $gray-300: #151515;
-$gray-400: #151515;
+$gray-400: #0f9b0f;
 $gray-500: #0f9b0f;
 $gray-600: #0f9b0f;
 $gray-700: #0f9b0f;
@@ -128,7 +128,7 @@ $tint-color: $body-color;
 
 // $input-btn-focus-color: rgba($component-active-bg, 0.25);
 
-//$input-bg: $secondary;
+// $input-bg: $secondary;
 // $input-disabled-bg: darken($input-bg, 15%);
 // $input-color: $tint-color;
 // $input-border-color: $tint-color;
@@ -204,7 +204,7 @@ $sizes: map-merge(
 //
 // Style anchor elements.
 
-$link-color:                              theme-color("primary") ;
+$link-color:                              theme-color("hack") ;
 $link-decoration:                         none ;
 $link-hover-color:                        darken($link-color, 15%) ;
 $link-hover-decoration:                   underline ;
@@ -278,7 +278,7 @@ $box-shadow:                  0 .5rem 1rem rgba($black, .15) ;
 $box-shadow-lg:               0 1rem 3rem rgba($black, .175) ;
 
 $component-active-color:      $white ;
-$component-active-bg:         theme-color("primary") ;
+$component-active-bg:         theme-color("hack") ;
 
 $caret-width:                 .3em ;
 $caret-vertical-align:        $caret-width * .85 ;
@@ -352,7 +352,7 @@ $lead-font-weight:            300 ;
 
 $small-font-size:             80% ;
 
-$text-muted:                  $gray-600 ;
+$text-muted:                  darken(theme-color('hack'), 10%) ;
 
 $blockquote-small-color:      $gray-600 ;
 $blockquote-small-font-size:  $small-font-size ;
@@ -384,24 +384,24 @@ $table-cell-padding-sm:       .3rem ;
 
 $table-color:                 $body-color ;
 $table-bg:                    null ;
-$table-accent-bg:             rgba($black, .05) ;
+$table-accent-bg:             rgba(theme-color("hack"), .05) ;
 $table-hover-color:           $table-color ;
-$table-hover-bg:              rgba($black, .075) ;
+$table-hover-bg:              rgba(theme-color("hack"), .075) ;
 $table-active-bg:             $table-hover-bg ;
 
 $table-border-width:          $border-width ;
 $table-border-color:          $border-color ;
 
-$table-head-bg:               $gray-200 ;
-$table-head-color:            $gray-700 ;
+$table-head-bg:               $body-bg ;
+$table-head-color:            theme-color("hack");
 
-$table-dark-color:            $white ;
-$table-dark-bg:               $gray-800 ;
-$table-dark-accent-bg:        rgba($white, .05) ;
+$table-dark-color:            theme-color("hack") ;
+$table-dark-bg:               $body-bg ;
+$table-dark-accent-bg:        rgba(theme-color("hack"), .05) ;
 $table-dark-hover-color:      $table-dark-color ;
-$table-dark-hover-bg:         rgba($white, .075) ;
+$table-dark-hover-bg:         rgba(theme-color("hack"), .075) ;
 $table-dark-border-color:     lighten($table-dark-bg, 7.5%) ;
-$table-dark-color:            $white ;
+// $table-dark-color:            $white ;
 
 $table-striped-order:         odd ;
 
