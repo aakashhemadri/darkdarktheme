@@ -207,7 +207,7 @@ $sizes: map-merge(
 $link-color:                              theme-color("hack") ;
 $link-decoration:                         none ;
 $link-hover-color:                        darken($link-color, 25%) ;
-$link-hover-decoration:                   none ;
+$link-hover-decoration:                   underline ;
 // Darken percentage for links with `.text-*` class (e.g. `.text-success`)
 $emphasized-link-hover-darken-percentage: 15% ;
 
@@ -731,7 +731,7 @@ $nav-link-disabled-color:           darken(theme-color("hack"),15%);
 $nav-tabs-border-color:             theme-color("hack") ;
 $nav-tabs-border-width:             $border-width ;
 $nav-tabs-border-radius:            $border-radius ;
-$nav-tabs-link-hover-border-color:  $gray-200 $gray-200 $nav-tabs-border-color ;
+$nav-tabs-link-hover-border-color:  darken(theme-color("hack"),25%) ;
 $nav-tabs-link-active-color:        lighten(theme-color("hack"), 15%);
 $nav-tabs-link-active-bg:           $body-bg ;
 $nav-tabs-link-active-border-color: $gray-300 $gray-300 $nav-tabs-link-active-bg ;
