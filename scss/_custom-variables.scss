@@ -9,21 +9,21 @@
 //$enable-gradients: true;
 
 // Changing the body background and text
-$body-bg: #1d1f21;
+$body-bg: #000;
 $body-color: #2ea155;
 
 // Changing the border radius of buttons
 $border-radius: 0px;
 
 // Changing the theme colors
-$primary: #282a2e;
-$secondary: #373b41;
+$primary: #0f1111;
+$secondary: #212323;
 $success: #8c9440;
 $info: #5f819d;
 $warning: #f0c674;
 $danger: #a54242;
-$light: #c5c8c6;
-$dark: #1d1f21;
+$light: #fff;
+$dark: #000;
 
 $tint-color: $body-color;
 // Adding (!) an additional theme color (ex. classes btn-cool, bg-cool)
@@ -110,11 +110,11 @@ $nav-pills-link-active-bg: $component-active-bg;
 
 $nav-divider-color: $secondary;
 
-// $navbar-dark-color:                 rgba($white, .5) !default;
-// $navbar-dark-hover-color:           rgba($white, .75) !default;
-// $navbar-dark-active-color:          $white !default;
-// $navbar-dark-disabled-color:        rgba($white, .25) !default;
-// $navbar-dark-toggler-icon-bg:       str-replace(url("data:image/svg+xml,%3csvg viewBox='0 0 30 30' xmlns='http://www.w3.org/2000/svg'%3e%3cpath stroke='#{$navbar-dark-color}' stroke-width='2' stroke-linecap='round' stroke-miterlimit='10' d='M4 7h22M4 15h22M4 23h22'/%3e%3c/svg%3e"), "#", "%23") !default;
+// $navbar-dark-color: rgba($white, 0.5);
+// $navbar-dark-hover-color: rgba($white, 0.75);
+// $navbar-dark-active-color: $white !default;
+// $navbar-dark-disabled-color: rgba($white, 0.25) !default;
+//  au
 // $navbar-dark-toggler-border-color:  rgba($white, .1) !default;
 
 // $navbar-light-color:                rgba($black, .5) !default;
